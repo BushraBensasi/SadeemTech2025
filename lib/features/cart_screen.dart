@@ -11,18 +11,7 @@ class CartScreen extends StatelessWidget {
           height: double.infinity,
           width: double.infinity,
           margin: EdgeInsets.symmetric(horizontal: 16.0),
-          child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 1,
-                crossAxisSpacing: 8,
-                mainAxisSpacing: 10,
-                childAspectRatio: 1.25, // width to height ratio
-              ),
-              itemCount: 10,
-              scrollDirection: Axis.vertical,
-              itemBuilder: (context, index) {
-                // final ProductEntity product = state.products[index];
-                return Card(
+          child: Card(
                   color: Colors.white,
                   shadowColor: Colors.black.withOpacity(0.2),
                   elevation: 5,
@@ -138,8 +127,8 @@ class CartScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                );
-              }),
+                ),
+
         ),
     );
   }
